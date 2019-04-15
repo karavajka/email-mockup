@@ -1,0 +1,987 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0;" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Welcome to The Spoke</title>
+    <!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,600,800,400&subset=latin"> -->
+    <style type="text/css">
+      @font-face {
+       font-family: "Canela-Bold";
+       src: url("https://s3-us-west-2.amazonaws.com/spoke-ui-media/email-pictures/welcome-email/fonts/Canela-Bold.woff2") format("woff2"),
+              url("https://s3-us-west-2.amazonaws.com/spoke-ui-media/email-pictures/welcome-email/fonts/Canela-Bold.woff") format("woff");
+      }
+
+       @font-face {
+       font-family: "Gotham-Book";
+       src: url("https://s3-us-west-2.amazonaws.com/spoke-ui-media/email-pictures/welcome-email/fonts/Gotham-Book.woff2") format("woff2"),
+              url("https://s3-us-west-2.amazonaws.com/spoke-ui-media/email-pictures/welcome-email/fonts/Gotham-Book.woff") format("woff");
+      }
+      
+      img {
+        border: none;
+        -ms-interpolation-mode: bicubic;
+        max-width: 100%; 
+      }
+
+      body {
+        background-color: #f6f6f6;
+        font-family: sans-serif;
+        -webkit-font-smoothing: antialiased;
+        font-size: 14px;
+        line-height: 1.4;
+        margin: 0;
+        padding: 0;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%; 
+      }
+      table {
+        border-collapse: collapse;
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+        width: 100%; 
+      }
+      table td {
+        font-family: sans-serif;
+        font-size: 14px;
+        vertical-align: top; 
+        box-sizing: border-box;
+      }
+
+      .body-table {
+        background-color: #ffffff;
+        max-width: 600px;
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+        padding-bottom: 32px;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        color: #152327;
+        font-family: "Gotham-Book", Helvetica, sans-serif;
+        font-weight: 300;
+        line-height: 1.4;
+        margin: 0;
+        margin-bottom: 8px; 
+      }
+
+      h1 {
+        font-family: "Canela-Bold", serif;
+        font-size: 24px;
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+
+      h3 {
+        font-size: 16px;
+      }
+
+      h4 {
+        font-family: "Canela-Bold", serif;
+        font-size: 16px;
+        margin-top: 8px; 
+      }
+
+      p {
+        font-family: "Gotham-Book", Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        color: #152327;
+        text-align: center;
+        line-height: 1.7;
+        margin-bottom: 16px;
+      }
+
+      p li,
+      ul li,
+      ol li {
+        list-style-position: inside;
+        margin-left: 5px; 
+      }
+
+      a {
+        color: #71bbd6;
+        font-weight: 400;
+        text-decoration: underline; 
+      }
+
+      .btn {
+        box-sizing: border-box;
+        width: 180px;
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+      }
+      .btn td {
+          background-color: #71bbd6;
+          border-radius: 20px;
+          -webkit-border-radius: 20px;
+          -moz-border-radius: 20px;
+          -khtml-border-radius: 20px;
+          text-align: center; 
+      }
+      .btn a {
+        width: 100%;
+        background-color: #71bbd6;
+        border: solid 1px #71bbd6;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -khtml-border-radius: 20px;
+        box-sizing: border-box;
+        color:  #ffffff;
+        cursor: pointer;
+        display: inline-block;
+        font-family: "Gotham-Book", Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 0.08em;
+        margin: 0;
+        padding: 8px 0px;
+        text-decoration: none;
+        text-transform: capitalize; 
+      }
+      
+      .preheader {
+        color: transparent;
+        display: none;
+        width: 0; 
+        height: 0;
+        max-height: 0;
+        max-width: 0;
+        font-size: 0;
+        opacity: 0;
+        overflow: hidden;
+        mso-hide: all;
+        visibility: hidden;
+      }
+
+      hr {
+        border: 0;
+        border-bottom: 1px solid #f6f6f6;
+        margin: 20px 0; 
+      }
+
+      .table-img {
+        width: 110px;
+      }
+
+      .img-large {
+        width: 53%;
+      }
+
+      .table-welcome-text {
+        max-width: 360px;
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+      }
+
+      .table-welcome-text  td,
+      .about-step td {
+        text-align: center;
+      }
+
+      .inline-table {
+        display: inline-table;
+      }
+
+      .inline-table-desktop {
+        display: inline-table;
+      }
+
+      .about-step {
+        width: 45%;
+      }
+
+      .table-userpics {
+        display: inline-table;
+        width: 118px;
+      }
+
+      .table-userpics-top {
+        width: 40%;
+      }
+
+      .pb24 {
+        padding-bottom: 32px; 
+      }
+
+      .pb8 {
+        padding-bottom: 8px;
+      }
+
+      @media only screen and (max-width: 620px) {
+        table[class=body-table] h1 {
+          font-size: 32px !important;
+          padding-left: 72px;
+          padding-right: 72px;
+          margin-bottom: 10px !important; 
+        }
+        table[class=body-table] p,
+        table[class=body-table] ul,
+        table[class=body-table] ol,
+        table[class=body-table] td,
+        table[class=body-table] span,
+        table[class=body-table] a {
+          font-size: 14px !important; 
+        }
+        table[class=body-table] p.larger-font-size {
+          font-size: 16px !important;
+        }
+        table[class=body-table] {
+          width: 100%;
+        }
+        table[class=body-table] .img-responsive {
+          height: auto !important;
+          max-width: 100% !important;
+          width: auto !important; 
+        }
+        table[class=inline-table-desktop] {
+          display: table !important;
+        }
+        .table-img {
+          display: none !important; 
+        }
+        .table-welcome-text {
+          max-width: 100%;
+        }
+        .simple-steps {
+          width: 50% !important;
+        }
+        .img-large,
+        .about-step {
+          width: 100%;
+          max-width: 100% !important;
+        }
+        .table-userpics-top {
+          width: 80% !important;
+        }
+        .table-userpics {
+          display: none !important;
+        }
+        .hide-on-mobile {
+          display: none !important;
+        }
+      
+      @media all {
+        .ExternalClass {
+          width: 100%; 
+        }
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+          line-height: 100%; 
+        }
+        .apple-link a {
+          color: inherit !important;
+          font-family: inherit !important;
+          font-size: inherit !important;
+          font-weight: inherit !important;
+          line-height: inherit !important;
+          text-decoration: none !important; 
+        }
+        .btn td:hover {
+          background-color: #77bacf !important; 
+        }
+        .btn td a:hover {
+          background-color: #77bacf !important;
+          border-color: #77bacf !important;
+        } 
+      }
+
+    </style>
+  </head>
+  <body topmargin="0" rightmargin="0" bottommargin="0" leftmargin="0" marginwidth="0" marginheight="0" width="100%" align="center" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; width: 100%; -webkit-font-smoothing: antialiased; text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; line-height: 100%;
+  background-color: #f6f6f6; color: #152327; text-align: center;" bgcolor="#f6f6f6" text="#152327">
+    <span class="preheader" style="color: transparent; display: none; width:0; height: 0; max-height: 0; max-width: 0; font-size: 0; opacity: 0; overflow: hidden;">The Spoke</span>
+    <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; width: 100%;">
+      <tbody>
+        <tr>
+          <td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0;">
+
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0; padding: 0; width: 100%; max-width: 600px; background-color: #ffffff; margin-inline-start: auto; margin-inline-end: auto; " class="body-table">
+            <tbody>
+              <tr>
+                <td align="center" style="display: block; width: 100%;">
+                  <img src="https://s3-us-west-2.amazonaws.com/spoke-ui-media/email-pictures/welcome-email/email-header.jpg" alt="The Spoke header" class="img-responsive" style="border: none; max-width: 100%;" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h1 style=" font-size: 24px; text-align: center; color: #152327; line-height: 1.4; margin: 0; margin-bottom: 8px; font-family: Canela-Bold, serif;">
+                    Welcome to The Spoke
+                  </h1>
+                </td>
+              </tr>
+              <!-- FIRST SECTION -->
+              <tr>
+                <td>
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+                    <tbody>
+                      <tr>
+                        <td>
+                          <table role="presentation" align="center" valign="top" border="0" cellpadding="0" cellspacing="0" class="table-img" style="border-collapse: collapse; width: 110px; display: inline-table;">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <img src="https://s3-us-west-2.amazonaws.com/spoke-ui-media/email-pictures/welcome-email/email-1table-left.jpg" alt="" style="width: 110px; height: 339px;" />
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <table role="presentation" align="center" valign="top" border="0" cellpadding="0" cellspacing="0" class="table-welcome-text" style="display: inline-table; width: 100%; max-width: 360px; vertical-align: top; margin-inline-start: auto; margin-inline-end: auto;">
+                            <tr>
+                              <td>
+                                <table role="presentation" align="center" valign="top" border="0" cellpadding="0" cellspacing="0" style="width: 15%; max-width: 60px; margin-inline-start: auto; margin-inline-end: auto; text-align: center;">
+                                  <tbody>
+                                    <tr>
+                                      <td>
+                                        <img src="https://s3-us-west-2.amazonaws.com/spoke-ui-media/email-pictures/welcome-email/email-blue-line-decoration.png" alt="" style="vertical-align: middle; max-width: 60px;" />
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <p class="larger-font-size table-welcome-text-p" style="padding-bottom: 24px; padding-top: 8px; text-align: center; color: #152327; font-family:'Gotham-Book', Helvetica,sans-serif; font-size: 14px; font-weight: normal;">
+                                  We're happy you're here Marcus
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding-left: 24px; padding-right: 24px;">
+                                <p class="pb24 table-welcome-text-p" style="line-height: 2.15; text-align: center; color: #152327; font-family:'Gotham-Book', Helvetica,sans-serif; font-size: 14px; font-weight: normal; margin: 0;margin-bottom: 16px; padding-bottom:32px;">
+                                  If you’re like us, you’ve spent enough time aimlessly sifting through Netflix or going to the same restaurant around the corner for the 200th time. We created The Spoke to help you do one thing: <b>make your next move.</b> The movie or show to watch. The restaurant to go to. You get the idea.
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
+                          <table role="presentation" align="center" valign="top" border="0" cellpadding="0" cellspacing="0" class="table-img" style="display: inline-table; width: 110px; float: right;">
+                            <tbody>
+                              <tr>
+                                <td><img src="https://s3-us-west-2.amazonaws.com/spoke-ui-media/email-pictures/welcome-email/email-1table-right.jpg" alt="" style="width: 110px; height: 339px; float: right;" /></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <!-- SECOND SECTION -->
+              <tr>
+                <td style="padding-top: 16px; padding-bottom: 8px;">
+                  <p style=" width: 270px;text-align: center; margin-inline-start: auto; margin-inline-end: auto; margin-left: auto; margin-right: auto;">
+                    It’s three simple steps to help you do one thing: <b>make your next move</b> <img src="https://s3-us-west-2.amazonaws.com/spoke-ui-media/tooltip-emoji/high-voltage.png" style="width: 20px; height: 20px; vertical-align: bottom;" alt="⚡️" />
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td style="text-align: center; padding-bottom: 24px;">
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="simple-steps" style="display: inline-table; width: 150px;">
+                    <tbody>
+                      <tr>
+                        <td><img src="https://s3-us-west-2.amazonaws.com/spoke-ui-media/email-pictures/welcome-email/email-step-1.jpg" style="width: 60px;" alt="First step" /></td>
+                      </tr>
+                      <tr>
+                        <td><p style="font-size: 12px;">Swipe to <b>Discover</b></p></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="simple-steps" style="display: inline-table; width: 150px;">
+                    <tbody>
+                      <tr>
+                        <td><img src="https://s3-us-west-2.amazonaws.com/spoke-ui-media/email-pictures/welcome-email/email-step-2.jpg" style="width: 60px;" alt="Second step" /></td>
+                      </tr>
+                      <tr>
+                        <td><p style="font-size: 12px;">Sync to <b>Deside</b></p></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="simple-steps" style="display: inline-table; width: 150px;">
+                    <tbody>
+                      <tr>
+                        <td><img src="https://s3-us-west-2.amazonaws.com/spoke-ui-media/email-pictures/welcome-email/email-step-3.jpg" style="width: 60px;" alt="Third step" /></td>
+                      </tr>
+                      <tr>
+                        <td><p style="font-size: 12px;">Tap to <b>Do</b></p></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+
+              <!-- THIRD SECTION -->
+              <tr>
+                <td>
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="img-large" style="display: inline-table; width: 100%; max-width: 318px;">
+                    <tbody>
+                      <tr>
+                        <td><img src="https://s3-us-west-2.amazonaws.com/spoke-ui-media/email-pictures/welcome-email/email-phone-discover.jpg" style="width: 100%; max-width: 318px;" alt="Phone whith screenshot" /></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="about-step" style="display: inline-table; float: right; width: 100%; max-width: 270px; text-align: center;">
+                    <tbody>
+                      <tr>
+                        <td style="padding-top: 32px; padding-bottom: 32px;">
+                          <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="margin-left: auto; margin-right: auto;">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <img src="https://s3-us-west-2.amazonaws.com/spoke-ui-media/email-pictures/welcome-email/email-step-1.jpg"  alt="First step" />
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <h2>Swipe to <b>Discover</b></h2>
+                                </td>
+                                <tr>
+                                  <td style="padding-bottom: 8px;">
+                                    <table role="presentation" align="center" valign="top" border="0" cellpadding="0" cellspacing="0" style="width: 15%; max-width: 60px; margin-inline-start: auto; margin-inline-end: auto; text-align: center;">
+                                      <tbody>
+                                        <tr>
+                                          <td>
+                                            <img src="https://s3-us-west-2.amazonaws.com/spoke-ui-media/email-pictures/welcome-email/email-blue-line-decoration.png" style="vertical-align: middle; width: 54px;" alt="" />
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <p style="line-height: 1.7;">
+                                      Discover <b>your next<br /> favorite movie, show</b> or<br /> <b>restaurant</b> with three<br /> simple actions: swipe right<br /> to <b style="color: #87cadf">save</b>, swipe left to <b style="color: #9d9d9d">skip</b>,<br /> or swipe up to <b style="color: #ffcd66">rate
+                                    </p>
+                                  </td>
+                                </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: right;" class="hide-on-mobile">
+                          <img src="https://s3-us-west-2.amazonaws.com/spoke-ui-media/email-pictures/welcome-email/twig-email.jpg" style="width: 70%;" alt=""  />
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+
+              <!-- FOURTH SECTION -->
+              <tr>
+                <td>
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="img-large" style="display: inline-table; float: right; width: 100%; max-width: 318px;">
+                    <tbody>
+                      <tr>
+                        <td><img src="https://s3-us-west-2.amazonaws.com/spoke-ui-media/email-pictures/welcome-email/email-phone-sync.jpg"  alt="Phone whith screenshot"  style="float: right; width: 100%; max-width: 318px;" /></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="about-step" style="display: inline-table; width: 100%; max-width: 270px; text-align: center;">
+                    <tbody>
+                      <tr>
+                        <td style="padding-top: 32px; padding-bottom: 32px;">
+                          <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="margin-left: auto; margin-right: auto;">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <img src="https://s3-us-west-2.amazonaws.com/spoke-ui-media/email-pictures/welcome-email/email-step-2.jpg"  alt="Second step" />
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <h2>Sync to <b>Deside</b></h2>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="padding-bottom: 8px;">
+                                  <table role="presentation" align="center" valign="top" border="0" cellpadding="0" cellspacing="0" style="width: 15%; max-width: 60px; margin-inline-start: auto; margin-inline-end: auto; text-align: center;">
+                                    <tbody>
+                                      <tr>
+                                        <td>
+                                          <img src="https://s3-us-west-2.amazonaws.com/spoke-ui-media/email-pictures/welcome-email/email-blue-line-decoration.png" alt="" style="vertical-align: middle; width: 54px;" />
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <p style="line-height: 1.7;">
+                                    Everything you saved is<br /> added to your <b>Slate</b> for<br /> future enjoyment. Sync<br /> slates with friends to<br /> <b>make a group decision<br /> in seconds</b>
+                                  </p>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+
+              <!-- FIVETH SECTION -->
+              <tr>
+                <td>
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="img-large" style="display: inline-table; width: 100%; max-width: 318px;">
+                    <tbody>
+                      <tr>
+                        <td><img src="https://s3-us-west-2.amazonaws.com/spoke-ui-media/email-pictures/welcome-email/email-phone-saerch.jpg" style="width: 100%; max-width: 318px;" alt="Phone whith screenshot" /></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="about-step" style="display: inline-table; float: right; width: 100%; max-width: 270px; text-align: center;">
+                    <tbody>
+                      <tr>
+                        <td style="padding-top: 32px;">
+                          <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="margin-left: auto; margin-right: auto;">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <img src="https://s3-us-west-2.amazonaws.com/spoke-ui-media/email-pictures/welcome-email/email-step-3.jpg"  alt="Third step" />
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <h2>Tap to <b>Do</b></h2>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="padding-bottom: 8px;">
+                                  <table role="presentation" align="center" valign="top" border="0" cellpadding="0" cellspacing="0" style="width: 15%; max-width: 60px; margin-inline-start: auto; margin-inline-end: auto; text-align: center;">
+                                    <tbody>
+                                      <tr>
+                                        <td>
+                                          <img src="https://s3-us-west-2.amazonaws.com/spoke-ui-media/email-pictures/welcome-email/email-blue-line-decoration.png" alt="" style="vertical-align: middle; width: 54px;" />
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <p style="line-height: 1.7;">
+                                    We’re connected to all<br /> your favorite services,<br /> from Netflix to Postmates,<br /> so you can <b>take action<br /> with just a tap</b>
+                                  </p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="text-align: right;">
+                                  <img src="https://s3-us-west-2.amazonaws.com/spoke-ui-media/email-pictures/welcome-email/espresso-scene-email.jpg" style="width: 70%;" />
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+
+              <!-- SIXTH SECTION -->
+              <tr>
+                <td>
+                  <table class="table-userpics-top" style="display: inline-table; width: 80%; max-width: 240px;">
+                    <tbody>
+                      <tr>
+                        <td>
+                          <img src="https://s3-us-west-2.amazonaws.com/spoke-ui-media/email-pictures/welcome-email/users-top-left-email.jpg" style="display: block; width: 100%; max-width: 240px;" alt="Users" />
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="hide-on-mobile" style="display: inline-table; width: 20%; max-width: 120px; float: right;">
+                    <tbody>
+                      <tr>
+                        <td style="padding-top: 90%;">
+                           <img src="https://s3-us-west-2.amazonaws.com/spoke-ui-media/email-pictures/welcome-email/user-top-right-email.jpg" style=" width: 100%; max-width: 120px;"  alt="" />
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                      <tr>
+                        <td>
+                          <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="table-userpics" style="display: inline-table; width: 118px;">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <img src="https://s3-us-west-2.amazonaws.com/spoke-ui-media/email-pictures/welcome-email/users-bottom-left-email.jpg" style="width: 118px;"  alt="" />
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="padding-top: 64px; line-height: 1;">
+                                  <img src="https://s3-us-west-2.amazonaws.com/spoke-ui-media/email-pictures/welcome-email/popcorn-top-email.jpg" alt="" style="width: 103px; vertical-align: bottom;" />
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="table-welcome-text"  style="display: inline-table; vertical-align: top; width: 100%; max-width: 360px; margin-inline-start: auto; margin-inline-end: auto;">
+                            <tbody>
+                              <tr>
+                                <td style="padding-left: 24px; padding-right: 24px;">
+                                  <p class="pb8" style="width: 270px; text-align: center; margin-left: auto; margin-right: auto;">
+                                    And as you’ll soon find out, the real magic happens <b>when you invite your crew</b>  <img src="https://s3-us-west-2.amazonaws.com/spoke-ui-media/tooltip-emoji/high-voltage.png" style="width: 20px; height: 20px; vertical-align: bottom;" alt="⚡️" />
+                                  </p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="btn" style="border-collapse: collapse; box-sizing: border-box; width: 180px; margin-inline-start: auto; margin-inline-end: auto; margin-left: auto; margin-right: auto;">
+                                    <tbody>
+                                      <tr>
+                                        <td style="vertical-align: top; background-color: #71bbd6; border-radius: 20px; text-align:center;">
+                                          <a href="https://thespoke.co"  style="color: #71bbd6 ; font-weight: 400; text-decoration: underline; width: 100%; background-color: #71bbd6; border: solid 1px #71bbd6; border-radius: 20px; box-sizing:border-box; color: #ffffff; display: inline-block; font-family: 'Gotham-Book', Helvetica, sans-serif; font-size: 14px; font-weight: bold; text-align: center; letter-spacing: 0.08em; margin: 0;padding: 8px 0px; text-decoration: none; text-transform: capitalize;" target="_blank">INVITE FRIENDS</a>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="text-align: right;">
+                                  <img src="https://s3-us-west-2.amazonaws.com/spoke-ui-media/email-pictures/welcome-email/users-middle-email.jpg" style="display: block; width: 30%; float: right;" alt="Users" />
+                                </td>
+                              </tr>
+                            </tbody>
+                           </table>
+                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="table-userpics" style="display: inline-table; width: 118px; float: right;">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <img src="https://s3-us-west-2.amazonaws.com/spoke-ui-media/email-pictures/welcome-email/users-bottom-right-email.jpg" style="width: 118px;" alt="" />
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                 </td>
+              </tr>
+
+              <!-- SEVENTH SECTION -->
+              <tr>
+                <td>
+                  <table role="presentation" align="center" valign="top" border="0" cellpadding="0" cellspacing="0" class="table-img"  style="display: inline-table; width: 110px;">
+                    <tbody>
+                      <tr>
+                        <td><img src="https://s3-us-west-2.amazonaws.com/spoke-ui-media/email-pictures/welcome-email/popcorn-bottom-email.jpg" style="width: 110px;" alt="" /></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="table-welcome-text" style="display: inline-table; width: 100%; max-width: 360px; margin-inline-start: auto; margin-inline-end: auto;">
+                    <tbody>
+                      <tr>
+                        <td>
+                          <p class="pb8 larger-font-size" style="padding-left: 32px; padding-right: 32px;">
+                            Thank you for joining our <b>public beta</b> as we continue to grow and evolve our app. With your help, the potential is limitless. Please feel free to reach out with any ideas you dream up or bugs you’ve found and we will get right back to you. 
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="pb8 larger-font-size">
+                            Here’s to the great things we<br /> will create together! <img src="https://s3-us-west-2.amazonaws.com/spoke-ui-media/tooltip-emoji/high-voltage.png" style="width: 20px; height: 20px; vertical-align: bottom;" alt="⚡️" />
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class="pb24 larger-font-size">
+                            Sincherly, <br />
+                            <b>The Spoke Family</b>
+                          </p>
+                        </td>
+                      </tr>
+                    </tbody>
+                   </table>
+                   <table role="presentation" align="center" valign="top" border="0" cellpadding="0" cellspacing="0" class="table-img" style="display: inline-table; float: right; text-align: right; width: 110px;">
+                    <tbody>
+                      <tr>
+                        <td style="padding-top: 24px;">
+                          <img src="https://s3-us-west-2.amazonaws.com/spoke-ui-media/email-pictures/welcome-email/menu-lavender-scene-email.jpg" style="width: 110px;" alt="" />
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="padding-bottom: 8px;">
+                  <p style="padding-left: 56px; padding-right: 56px;">
+                    Jump back in with some of our favorite lists:
+                  </p>
+                </td>
+              </tr>
+
+              <!-- EIGHTH SECTION -->
+              <tr>
+                <td>
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                      <tr>
+                        <td align="center" style="padding-left: 24px; padding-right: 24px;">
+                      <!-- Discover List #1 RESTAURANTS-->
+                          <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="inline-table-desktop" style="width: 180px; vertical-align: top; display: inline-table;">
+                            <tbody>
+                              <tr>
+                                <td style="padding-left: 20px; padding-right: 20px; padding-top: 40px;">
+                                  <img src="https://s3-us-west-2.amazonaws.com/spoke-ui-media/email-pictures/welcome-email/email-list-lines.png" style="height: 18px; width: 100%;" alt="" />
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="padding-left: 8px; padding-right: 8px;">
+                              <!-- Background - one of list item's image -->
+                                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 164px; background-image: url(https://s3-media2.fl.yelpcdn.com/bphoto/G63yuXdBpIk5Aayr_8cW0A/o.jpg); background-repeat: no-repeat; background-size: cover; border-radius: 12px;">
+                                    <tbody>
+                                      <tr>
+                                        <td style="height: 164px; padding-right: 8px; padding-top: 96px; padding-left: 96px; padding-bottom: 8px; -moz-box-sizing: border-box; box-sizing: border-box;">
+                                          <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 60px;background: #ffffff; border-radius: 30px;">
+                                            <tbody>
+                                              <tr>
+                                                <td style="height: 60px; text-align: center;">
+                                                <!-- Item count -->
+                                                  <p style="line-height: 60px; margin-bottom: 0px; margin: 0;">
+                                                    980<img src="https://s3-us-west-2.amazonaws.com/spoke-ui-media/email-pictures/welcome-email/email-list-icon.png" alt="" style="width: 10px; padding-left: 2px;" />
+                                                  </p>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <!-- Title of restaurant list -->
+                                  <h4 style="text-align: left; line-height: 1.4; padding-left: 8px; padding-right: 8px;">
+                                    List Title - Restaurant
+                                  </h4>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="padding-left: 8px; padding-right: 8px; padding-bottom: 40px;">
+                                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="display: inline-table; width: 32px;  border-radius: 50%; background: #cccccc;">
+                                    <tbody>
+                                      <tr>
+                                        <td style="width: 32px; height: 32px; line-height: 0.6;">
+                                          <!-- Author picture -->
+                                          <img src="https://s3-us-west-2.amazonaws.com/spoke-api-media/spoke-api/test/profile_pictures/download_QHm2aJD.png" style="width: 32px; height: 32px; border-radius: 50%; display: block;" />
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="display: inline-table; width: 120px;">
+                                    <tbody>
+                                      <tr>
+                                        <td>
+                                          <!-- Autor name -->
+                                          <p style="width: 120px; text-align: left; padding-left: 4px; font-size: 12px; margin-bottom: 0px; line-height: 32px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;">
+                                            by <b>Autor name</b>
+                                          </p>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                      <!-- Discover List #2 MOVIE-->
+                          <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="inline-table-desktop" style="width: 180px; vertical-align: top; display: inline-table;">
+                            <tbody>
+                              <tr>
+                                <td style="padding-left: 20px; padding-right: 20px;">
+                                  <img src="https://s3-us-west-2.amazonaws.com/spoke-ui-media/email-pictures/welcome-email/email-list-lines.png" style="height: 18px; width: 100%;" alt="" />
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="padding-left: 8px; padding-right: 8px;">
+                                  <!-- Background - one of list item's image -->
+                                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 164px; background-image: url(https://static-api.guidebox.com/thumbnails_movies_medium/36593-2956338306-3774141520-3072004901-medium-240x342.jpg); background-repeat: no-repeat; background-size: cover; border-radius: 12px;">
+                                    <tbody>
+                                      <tr>
+                                        <td style="height: 230px; padding-right: 8px; padding-top: 162px; padding-left: 96px; padding-bottom: 8px; -moz-box-sizing: border-box; box-sizing: border-box;">
+                                           <table role="presentation" border="0" cellpadding="0" cellspacing="0" style=" width: 60px;background: #ffffff; border-radius: 30px;">
+                                            <tbody>
+                                              <tr>
+                                                <td style="height: 60px; text-align: center;">
+                                                  <!-- Item count -->
+                                                  <p style="line-height: 60px; margin-bottom: 0px; margin: 0;">
+                                                    18<img src="https://s3-us-west-2.amazonaws.com/spoke-ui-media/email-pictures/welcome-email/email-list-icon.png" alt="" style="width: 10px; padding-left: 2px;" />
+                                                  </p>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <!-- Title of MOVIE list -->
+                                  <h4 style="text-align: left; line-height: 1.4; padding-left: 8px; padding-right: 8px;">
+                                    List Title - Movie
+                                  </h4>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="padding-left: 8px; padding-right: 8px;">
+                                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="display: inline-table; width: 32px;  border-radius: 50%; background: #cccccc;">
+                                    <tbody>
+                                      <tr>
+                                        <td style="width: 32px; height: 32px; line-height: 0.6;">
+                                          <!-- Author picture -->
+                                          <img src="" style="width: 32px; height: 32px; border-radius: 50%; display: block;" />
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="display: inline-table; width: 120px;">
+                                    <tbody>
+                                      <tr>
+                                        <td>
+                                          <!-- Autor name -->
+                                          <p style="width: 120px; text-align: left; padding-left: 4px; font-size: 12px; margin-bottom: 0px; line-height: 32px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;">
+                                            by <b>Autor name</b>
+                                          </p>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                      <!-- Discover List #3 -->
+                           <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="inline-table-desktop" style="width: 180px; vertical-align: top; display: inline-table;">
+                            <tbody>
+                              <tr>
+                                <td style="padding-left: 20px; padding-right: 20px; padding-top: 40px;">
+                                  <img src="https://s3-us-west-2.amazonaws.com/spoke-ui-media/email-pictures/welcome-email/email-list-lines.png" style="height: 18px; width: 100%;" alt="" />
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="padding-left: 8px; padding-right: 8px;">
+                                  <!-- Background - one of list item's image -->
+                                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 164px; background-image: url(https://s3-media1.fl.yelpcdn.com/bphoto/ijiknOFQRPDTCczy5OfIEA/o.jpg); background-repeat: no-repeat; background-size: cover; border-radius: 12px;">
+                                    <tbody>
+                                      <tr>
+                                        <td style="height: 164px; padding-right: 8px; padding-top: 96px; padding-left: 96px; padding-bottom: 8px;  -moz-box-sizing: border-box; box-sizing: border-box;">
+                                          <table role="presentation" border="0" cellpadding="0" cellspacing="0" style=" width: 60px;background: #ffffff; border-radius: 30px;">
+                                            <tbody>
+                                              <tr>
+                                                <td style="height: 60px; text-align: center;">
+                                                  <!-- Item count -->
+                                                  <p style="line-height: 60px; margin-bottom: 0px; margin: 0;">
+                                                    18<img src="https://s3-us-west-2.amazonaws.com/spoke-ui-media/email-pictures/welcome-email/email-list-icon.png" alt="" style="width: 10px; padding-left: 2px;" />
+                                                  </p>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <!-- Title of restaurant list -->
+                                  <h4 style="text-align: left; line-height: 1.4; padding-left: 8px; padding-right: 8px;">
+                                    List Title - Restaurant
+                                  </h4>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="padding-left: 8px; padding-right: 8px;">
+                                   <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="display: inline-table; width: 32px;  border-radius: 50%; background: #cccccc;">
+                                    <tbody>
+                                      <tr>
+                                        <td style="width: 32px; height: 32px; line-height: 0.6;">
+                                          <!-- Author picture -->
+                                          <img src="https://s3-us-west-2.amazonaws.com/spoke-api-media/spoke-api/test/profile_pictures/zagat-1.png" style="width: 32px; height: 32px; border-radius: 50%; display: block;" />
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="display: inline-table; width: 120px;">
+                                    <tbody>
+                                      <tr>
+                                        <td>
+                                          <!-- Autor name -->
+                                          <p style="width: 120px; text-align: left; padding-left: 4px; font-size: 12px; margin-bottom: 0px; line-height: 32px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;">
+                                            by <b>Autor name</b>
+                                          </p>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom: 64px; padding-top: 24px;">
+                   <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="btn" style="border-collapse:collapse; box-sizing: border-box; width: 180px; margin-inline-start: auto; margin-inline-end: auto; margin-left: auto; margin-right: auto;">
+                    <tbody>
+                      <tr>
+                        <td style="vertical-align: top; background-color: #71bbd6; border-radius: 20px; text-align:center">
+                          <a href="https://thespoke.co" style="color: #71bbd6 ; font-weight: 400; text-decoration: underline; width: 100%; background-color: #71bbd6; border: solid 1px #71bbd6; border-radius: 20px; box-sizing:border-box; color: #ffffff; display: inline-block; font-family: 'Gotham-Book', Helvetica, sans-serif; font-size: 14px; font-weight: bold; text-align: center; letter-spacing: 0.08em; margin: 0;padding: 8px 0px; text-decoration: none; text-transform: capitalize;" target="_blank">VIEW MORE LISTS</a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+
+              </tbody>
+            </table>
+
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
